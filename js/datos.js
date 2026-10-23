@@ -43,7 +43,7 @@ const SERVICIOS = [
     icono: "i-wrench",
     titulo: "Service y reparación",
     texto: "Diagnóstico en el sitio y reparación con repuestos originales de las marcas más habituales del mercado.",
-    lista: ["Cambio de compresor y relés", "Reparación de placa electrónica", "Garantía de 6 meses por intervención"],
+    lista: ["Mantenimiento preventivo", "Cambio de compresor y relés", "Reparación de placa electrónica", "Garantía de 6 meses por intervención"],
     enlace: "Pedir un técnico"
   },
   {
