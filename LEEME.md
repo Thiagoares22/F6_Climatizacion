@@ -213,13 +213,3 @@ a una carpeta `img/` local y reemplazá las URLs por las rutas locales
 Para cambiar el SEO, editá las etiquetas `<meta>` del `<head>` de `index.html`.
 
 ---
-
-## 9. Publicar el sitio
-
-Como es HTML estático, sirve con cualquier hosting:
-
-- **Netlify / Vercel / Cloudflare Pages:** arrastrá la carpeta. No hay build.
-- **Hosting tradicional:** subí los archivos por FTP a `public_html`.
-- **Google Sites, Netlify Drop, GitHub Pages:** también funcionan tal cual.
-
-Si agregás un backend o precompilás algo, ajustá las rutas de `css/` y `js/`.
