@@ -43,7 +43,7 @@ const SERVICIOS = [
     icono: "i-wrench",
     titulo: "Service y reparación",
     texto: "Diagnóstico en el sitio y reparación con repuestos originales de las marcas más habituales del mercado.",
-    lista: ["Diagnóstico de fallas y solución de problemas", "Cambio de compresor y relés", "Reparación de placa electrónica", "Garantía de 6 meses por intervención"],
+    lista: ["Diagnóstico de fallas y solución de problemas", "Cambio de compresor y relés", "Reparación de placa electrónica", "Garantía de 40 días hábiles por intervención"],
     enlace: "Pedir un técnico"
   },
   {
@@ -185,11 +185,11 @@ const FAQ = [
   },
   {
     p: "¿Qué garantía manejan en las intervenciones?",
-    r: "Todas nuestras reparaciones tienen 6 meses de garantía sobre mano de obra y repuestos. Las instalaciones incluyen garantía de los equipos según el plazo del fabricante (de 1 a 3 años)."
+    r: "Todas nuestras reparaciones tienen 40 días de garantía sobre mano de obra y repuestos. Las instalaciones incluyen garantía de los equipos según el plazo del fabricante (de 1 a 3 años)."
   },
   {
     p: "¿Cuánto cuesta la recarga de gas?",
-    r: "El precio depende del equipo y del refrigerante. Antes de recargar siempre detectamos fugas: si hay una pérdida, recargar sin corregirla sería tirar el gas. El diagnóstico es sin cargo."
+    r: "El precio depende del equipo y del refrigerante. Antes de recargar siempre detectamos fugas: si hay una pérdida, recargar sin corregirla sería tirar el gas. El presupuesto se informa antes de intervenir."
   },
   {
     p: "¿Cada cuánto hay que limpiar el filtro del aire acondicionado?",
