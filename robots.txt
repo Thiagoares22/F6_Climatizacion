@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://f6climatizacion.netlify.app/sitemap.xml
+Sitemap: https://f6-climatizacion.aresthiago911.workers.dev/sitemap.xml
