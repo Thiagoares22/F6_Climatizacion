@@ -1250,3 +1250,95 @@ img { -webkit-user-drag: none; }
 @media (max-width: 767px) {
   .d-none-mobile { display: none !important; }
 }
+
+/* ---------------------------------------------------------------
+   15. Páginas legales (privacidad, términos)
+   --------------------------------------------------------------- */
+.header--legal {
+  border-bottom-color: var(--borde);
+  background: #fff;
+}
+
+.legal {
+  padding-block: calc(var(--alto-nav) + var(--esp-6)) var(--esp-8);
+  background: var(--fondo);
+}
+
+.legal__contenido { max-width: 68ch; }
+
+.legal__contenido h1 {
+  font-size: var(--h2);
+  line-height: 1.15;
+  color: var(--azul-900);
+  margin-bottom: var(--esp-2);
+}
+
+.legal__meta {
+  color: var(--texto-suave);
+  font-size: var(--chico);
+  margin-bottom: var(--esp-6);
+  padding-bottom: var(--esp-4);
+  border-bottom: 1px solid var(--borde);
+}
+
+.legal__contenido h2 {
+  font-size: var(--h3);
+  line-height: 1.25;
+  color: var(--azul-900);
+  margin-top: var(--esp-6);
+  margin-bottom: var(--esp-2);
+}
+
+.legal__contenido p,
+.legal__contenido li {
+  color: var(--texto);
+  line-height: 1.75;
+}
+
+.legal__contenido p + p { margin-top: var(--esp-3); }
+
+.legal__contenido ul,
+.legal__contenido ol {
+  margin-block: var(--esp-2) var(--esp-3);
+  padding-left: 1.25rem;
+  display: grid;
+  gap: var(--esp-2);
+}
+
+.legal__contenido li::marker { color: var(--azul-500); }
+
+.legal__contenido a {
+  color: var(--azul-600);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.legal__contenido a:hover { color: var(--azul-800); }
+
+.legal__contenido strong { color: var(--gris-900); }
+
+.legal__contenido code {
+  font-size: 0.9em;
+  background: var(--gris-100);
+  border: 1px solid var(--borde);
+  border-radius: 6px;
+  padding: 0.1rem 0.35rem;
+}
+
+.legal__volver {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--esp-2);
+  margin-top: var(--esp-7);
+  padding: 0.7rem 1.2rem;
+  border-radius: var(--radio-full);
+  background: var(--azul-700);
+  color: #fff;
+  font-weight: 600;
+  font-size: var(--chico);
+}
+.legal__volver:hover { background: var(--azul-800); color: #fff; }
+
+@media (min-width: 768px) {
+  .legal { padding-block: calc(var(--alto-nav) + var(--esp-8)) var(--esp-8); }
+  .legal__contenido { max-width: 72ch; }
+}

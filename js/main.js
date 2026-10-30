@@ -589,6 +589,9 @@
         })
         .then(() => {
           form.reset();
+          if (typeof window.gtag === "function") {
+            window.gtag("event", "formulario_enviado", { servicio: datos.servicio || "no_especificado" });
+          }
           $$("[aria-invalid]", form).forEach((el) => el.setAttribute("aria-invalid", "false"));
           $$(".campo__error", form).forEach((el) => el.classList.remove("visible"));
           mostrarToast("¡Consulta enviada!", "Gracias por escribirnos. Te respondemos dentro de las próximas 24 horas.");
@@ -624,22 +627,27 @@
           (servicio ? `Necesito: ${servicio}\n` : "") +
           (mensaje ? `Detalle: ${mensaje}` : "Quedo a la espera, gracias.");
 
+        if (typeof window.gtag === "function") {
+          window.gtag("event", "whatsapp_click", { ubicacion: "formulario" });
+        }
         window.open(D.waLink(texto), "_blank", "noopener");
       });
     }
 
-    // Enlaces legales: evitan la navegación pero avisan
-    ["#linkPrivacidad", "#linkTerminos", "#linkPrivacidad2"].forEach((sel) => {
-      const el = $(sel);
-      if (!el) return;
-      el.addEventListener("click", (e) => {
-        e.preventDefault();
-        mostrarToast(
-          "Próximamente",
-          "Este documento legal todavía no está publicado. Escribinos y te lo enviamos por mail."
-        );
-      });
-    });
+    // Analytics: eventos de conversión (solo si gtag está disponible)
+    function track(evento, params) {
+      if (typeof window.gtag === "function") window.gtag("event", evento, params || {});
+    }
+
+    document.addEventListener("click", (e) => {
+      const enlace = e.target.closest ? e.target.closest("a[href*='wa.me']") : null;
+      if (enlace) track("whatsapp_click", { ubicacion: enlace.closest("#contacto") ? "seccion_contacto" : "otro" });
+    }, { passive: true });
+
+    document.addEventListener("click", (e) => {
+      const enlace = e.target.closest ? e.target.closest("a[href^='tel:']") : null;
+      if (enlace) track("telefono_click", {});
+    }, { passive: true });
   }
 
   /* -------------------------------------------------------------
