@@ -1,5 +1,5 @@
 /* =====================================================================
-   F6 Refrigeración — Datos del sitio
+   F6 Climatización - Datos del sitio
    ---------------------------------------------------------------------
    Editá este archivo para cambiar el contenido de la página:
    servicios, galería, testimonios, preguntas y artículos.
@@ -11,7 +11,7 @@
    1. Configuración general (EDITAR)
    --------------------------------------------------------------- */
 const CONFIG = {
-  empresa: "F6 Refrigeración",
+  empresa: "F6 Climatización",
   telefono: "+54 9 11 2499-6663",          
   telefonoLink: "tel:+541124996663",       
   whatsapp: "541124996663",                

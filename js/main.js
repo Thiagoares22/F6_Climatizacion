@@ -1,5 +1,5 @@
 /* =====================================================================
-   F6 Refrigeración — Lógica del sitio
+   F6 Climatización - Lógica del sitio
    ---------------------------------------------------------------------
    Vanilla JS, sin dependencias. Se divide en:
      1. Utilidades
@@ -573,7 +573,7 @@
       boton.innerHTML = "Enviando…";
 
       const datos = Object.fromEntries(new FormData(form).entries());
-      datos._subject = "Nueva consulta desde el sitio de F6 Refrigeración";
+      datos._subject = "Nueva consulta desde el sitio de F6 Climatización";
       datos._template = "table";
       datos._captcha = "false";
       datos._replyto = datos.email || D.CONFIG.email;
@@ -619,7 +619,7 @@
         }
 
         const texto =
-          `Hola F6 Refrigeración, soy ${nombre}.\n` +
+          `Hola F6 Climatización, soy ${nombre}.\n` +
           `Teléfono: ${telefono}\n` +
           (servicio ? `Necesito: ${servicio}\n` : "") +
           (mensaje ? `Detalle: ${mensaje}` : "Quedo a la espera, gracias.");
