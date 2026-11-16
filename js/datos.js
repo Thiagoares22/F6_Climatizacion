@@ -43,7 +43,7 @@ const SERVICIOS = [
     icono: "i-wrench",
     titulo: "Service y reparación",
     texto: "Diagnóstico en el sitio y reparación con repuestos originales de las marcas más habituales del mercado.",
-    lista: ["Diagnóstico de fallas y solución de problemas", "Cambio de compresor y relés", "Reparación de placa electrónica", "Garantía de 40 días hábiles por intervención"],
+    lista: ["Diagnóstico de fallas y solución de problemas", "Cambio de compresor y relés", "Reparación de placa electrónica", "Todos los trabajos tienen garantía"],
     enlace: "Pedir un técnico"
   },
   {
@@ -185,7 +185,7 @@ const FAQ = [
   },
   {
     p: "¿Qué garantía manejan en las intervenciones?",
-    r: "Todas nuestras reparaciones tienen 40 días de garantía sobre mano de obra y repuestos. Las instalaciones incluyen garantía de los equipos según el plazo del fabricante (de 1 a 3 años)."
+    r: "¡Tu tranquilidad es nuestra prioridad! Todos nuestros trabajos cuentan con garantía, para que tengas la seguridad y confianza de recibir un servicio de calidad, con respaldo profesional en cada intervención."
   },
   {
     p: "¿Cuánto cuesta la recarga de gas?",

@@ -591,11 +591,11 @@ img { -webkit-user-drag: none; }
 .hero__tarjeta-item span { font-size: var(--chico); color: #a8c4d8; }
 
 /* ---------------------------------------------------------------
-   6. Barra de confianza / métricas
+   6. Barra de compromisos
    --------------------------------------------------------------- */
 .metricas {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: 1px;
   background: var(--borde);
   border: 1px solid var(--borde);
@@ -607,15 +607,26 @@ img { -webkit-user-drag: none; }
   padding: var(--esp-5) var(--esp-4);
   text-align: center;
 }
+.metrica__icono {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-bottom: var(--esp-3);
+  border-radius: 50%;
+  background: rgba(255, 122, 24, 0.12);
+  color: var(--naranja);
+}
+.metrica__icono svg { width: 20px; height: 20px; }
 .metrica__cifra {
   display: block;
-  font-size: clamp(1.6rem, 1.2rem + 1.6vw, 2.4rem);
+  font-size: clamp(1.25rem, 1rem + 1vw, 1.75rem);
   font-weight: 800;
-  line-height: 1;
+  line-height: 1.15;
   color: var(--azul-700);
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
 }
-.metrica__cifra span { color: var(--naranja); }
 .metrica__etiqueta {
   display: block;
   margin-top: var(--esp-2);
@@ -1211,7 +1222,7 @@ img { -webkit-user-drag: none; }
 }
 
 @media (min-width: 640px) {
-  .metricas { grid-template-columns: repeat(4, 1fr); }
+  .metricas { grid-template-columns: repeat(3, 1fr); }
   .rejilla-servicios { grid-template-columns: repeat(2, 1fr); }
   .hero__acciones .btn { min-width: 190px; }
   .footer__bottom { flex-direction: row; justify-content: space-between; text-align: left; }

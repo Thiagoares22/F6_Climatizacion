@@ -8,9 +8,8 @@
      4. Galería y lightbox
      5. Carrusel de testimonios
      6. Acordeón de preguntas
-     7. Contadores animados
-     8. Formulario y avisos
-     9. Scroll: progreso, header y enlace activo
+     7. Formulario y avisos
+     8. Scroll: progreso, header y enlace activo
    ===================================================================== */
 
 (function () {
@@ -424,58 +423,7 @@
   }
 
   /* -------------------------------------------------------------
-     7. Contadores animados
-     ------------------------------------------------------------- */
-  function initContadores() {
-    const cont = $("#metricas");
-    if (!cont) return;
-
-    const elementos = $$("[data-contador]", cont);
-    const animar = (el) => {
-      const destino = Number(el.dataset.contador);
-      const sufijo = el.dataset.sufijo || "";
-      const duracion = 1600;
-      const inicio = performance.now();
-
-      const paso = (ahora) => {
-        const t = Math.min((ahora - inicio) / duracion, 1);
-        const ease = 1 - Math.pow(1 - t, 3);
-        el.textContent = formatearPrecio(Math.round(destino * ease)) + sufijo;
-        if (t < 1) requestAnimationFrame(paso);
-      };
-      requestAnimationFrame(paso);
-    };
-
-    if (reduceMotion) {
-      elementos.forEach((el) => (el.textContent = el.dataset.contador + (el.dataset.sufijo || "")));
-      return;
-    }
-
-    if ("IntersectionObserver" in window) {
-      const obs = new IntersectionObserver((entradas, obs) => {
-        entradas.forEach((entrada) => {
-          if (!entrada.isIntersecting) return;
-          animar(entrada.target);
-          obs.unobserve(entrada.target);
-        });
-      }, { threshold: 0.4 });
-      elementos.forEach((el) => obs.observe(el));
-    } else {
-      elementos.forEach(animar);
-    }
-
-    // Red de seguridad: si el observador nunca dispara, mostramos el valor final
-    window.setTimeout(() => {
-      elementos.forEach((el) => {
-        if (el.textContent === "0" || el.textContent === "0" + (el.dataset.sufijo || "")) {
-          el.textContent = formatearPrecio(Number(el.dataset.contador)) + (el.dataset.sufijo || "");
-        }
-      });
-    }, 6000);
-  }
-
-  /* -------------------------------------------------------------
-     8. Formulario, toasts y WhatsApp
+     7. Formulario, toasts y WhatsApp
      ------------------------------------------------------------- */
   function mostrarToast(titulo, mensaje, tipo) {
     const cont = $("#toastContenedor");
@@ -651,7 +599,7 @@
   }
 
   /* -------------------------------------------------------------
-      9. Scroll: progreso, header, enlace activo y animaciones
+      8. Scroll: progreso, header, enlace activo y animaciones
      ------------------------------------------------------------- */
   function initScroll() {
     const header = $("#header");
@@ -755,7 +703,6 @@
     initLightbox();
     initCarrusel();
     initFaq();
-    initContadores();
     initFormulario();
     initScroll();
     initRevelar();
