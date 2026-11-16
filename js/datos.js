@@ -16,7 +16,7 @@ const CONFIG = {
   telefonoLink: "tel:+541124996663",       
   whatsapp: "541124996663",                
   email: "f6climatizacion@gmail.com",    
-  direccion: "Bahia Blanca 622, torre 3 piso 1 depto 3",   
+  direccion: "Bahia Blanca 622",   
   ciudad: "Wilde, Avellaneda, Buenos Aires",            
   mapa: "https://www.openstreetmap.org/export/embed.html?bbox=-58.31585%2C-34.69703%2C-58.31173%2C-34.69553&layer=mapnik&marker=-34.6963204%2C-58.3135121",
   instagram: "https://www.instagram.com/f6climatizacion/",
