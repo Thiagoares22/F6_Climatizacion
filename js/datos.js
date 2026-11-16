@@ -81,44 +81,44 @@ const SERVICIOS = [
    --------------------------------------------------------------- */
 const GALERIA = [
   {
-    titulo: "Instalación de heladera",
-    lugar: "Cocina · Zona Sur",
-    img: "./f6 imagenes/heladera 0.jpg"
+    titulo: "Instalación de split",
+    lugar: "Puesta en marcha",
+    img: "./imagenes/trabajos/instalacion-split.jpg"
   },
   {
-    titulo: "Mantenimiento preventivo",
-    lugar: "Heladera familiar",
-    img: "photo-1581094794329-c8112a89af12"
+    titulo: "Cableado y conexión eléctrica",
+    lugar: "Instalación nueva",
+    img: "./imagenes/trabajos/cableado-electrico.jpg"
   },
   {
-    titulo: "Recarga de refrigerante",
-    lugar: "Split 4500 frigorías",
-    img: "./f6 imagenes/gases-refrigerantes.jpg"
+    titulo: "Prueba de presurización",
+    lugar: "Control de fugas con nitrógeno",
+    img: "./imagenes/trabajos/presurizacion-nitrogeno.jpg"
   },
   {
-    titulo: "Cámara frigorífica",
-    lugar: "Local comercial",
-    img: "./f6 imagenes/camara-frigorifica.jpg"
+    titulo: "Limpieza de unidad interior",
+    lugar: "Mantenimiento de split",
+    img: "./imagenes/trabajos/limpieza-unidad-interior.jpg"
   },
   {
-    titulo: "Equipo técnico en sitio",
-    lugar: "Service a domicilio",
-    img: "photo-1581092160562-40aa08e78837"
+    titulo: "Desarme del ventilador",
+    lugar: "Service de unidad interior",
+    img: "./imagenes/trabajos/desarme-ventilador.jpg"
   },
   {
-    titulo: "Aire acondicionado central",
-    lugar: "Vivienda unifamiliar",
-    img: "./f6 imagenes/como-funciona-el-aire-acondicionado.jpg"
+    titulo: "Reparación de ventilador",
+    lugar: "Service de split",
+    img: "./imagenes/trabajos/reparacion-ventilador.jpg"
   },
   {
-    titulo: "Freezer en depósito",
-    lugar: "Almacén de alimentos",
-    img: "./f6 imagenes/frezzer.jpg"
+    titulo: "Regulación de presión",
+    lugar: "Puesta a punto",
+    img: "./imagenes/trabajos/regulacion-presion.jpg"
   },
   {
-    titulo: "Vitrina en tienda",
-    lugar: "Comercio de barrio",
-    img: "photo-1600489000022-c2086d79f9d4"
+    titulo: "Vacío y armado",
+    lugar: "Instalación de split",
+    img: "./imagenes/trabajos/vacio-y-armado.jpg"
   }
 ];
 
@@ -210,7 +210,7 @@ const ARTICULOS = [
     categoria: "Mantenimiento",
     fecha: "12 de marzo",
     extracto: "El filtro es lo que todos limpian, pero el condensador es el que más rendimiento te da. Te mostramos el paso a paso sin herramientas especiales.",
-    img: "./f6 imagenes/blog img/aireAconBlog.jpg"
+    img: "./imagenes/trabajos/condensador-split.jpg"
   },
   {
     titulo: "Heladera No Frost: 7 errores que arruinan tu equipo",
@@ -231,7 +231,7 @@ const ARTICULOS = [
     categoria: "Técnico",
     fecha: "30 de enero",
     extracto: "No todos los gases son iguales. Comparamos seguridad, rendimiento y huella ambiental para que sepas qué tiene tu equipo instalado.",
-    img: "photo-1571175443880-49e1d25b2bc5"
+    img: "./imagenes/trabajos/presurizacion-nitrogeno-2.jpg"
   },
   {
     titulo: "Freezer horizontal o vertical: cuál te conviene",
